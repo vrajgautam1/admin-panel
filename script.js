@@ -22,16 +22,30 @@ $("#sidebar button").on("click", function(){
 
 
 $("#hamburger").on("click", function(){
-  $("#sidebar").toggle(10,function(){
+  $("#sidebar").toggle(20,function(){
       sidebarCustom();
   });
 })
+
+
+
+
 
 $("#form").hide();
 $("#form-link").on("click", function(){
   $("#form").toggle();
 })
 
+$("#sub-form").hide()
+$("#signup").on("click", function(){
+  $("#sub-form").show();
+  $("#main-form").hide();
+  // $("#sub-form").css("backgroud-color","blue");
+})
+
+// $("#form").on("click", function(){
+//   $("#form").toggle();
+// })
 
 //--------------------------------------- Charts ---------------------------------------//
 
@@ -172,6 +186,11 @@ $(".counter").counter({
                               // default: "easeOutQuad"
   onStart: function() {},     // callback on start of the counting
   onComplete: function() {},  // callback on completion of the counting
+
+  // numberFormatter:            // function used to format the displayed numbers.
+  //   function(number) {
+  //     return "$ " + number;
+  //   }
 });
 
 //---------------------------------- Calendar---------------------------//
