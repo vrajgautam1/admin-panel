@@ -333,7 +333,7 @@ form button{
 /*-------- Dashboard ------*/
 
 #dashboard{
-    background-color: #b0b0b0;
+    background-color: #4b5b6c;
     padding: 20px;
     padding-top:10px;
 }
@@ -403,6 +403,9 @@ form button{
     font-size: 1.2rem;
 }
 
+.internal-card-div p{
+    text-align: center;
+}
 .internal-card-div-5 i{
     font-size:2.7rem;
     color: #B5CC18;
@@ -510,9 +513,70 @@ box-shadow: 0 0 5px 0 #000;
 table{
     margin-top:10px;
 }
+/* /////////////////////charts section/////////////// */
 
+#charts{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* grid-template-rows: repeat(2, 1fr); */
+    row-gap: 35px;
+    column-gap: 35px;
+    padding:30px;
+    margin: auto;
+    width: 100%;
+}
 
+#chart0, #chart2, #chart3, #chart4{
+    width: 90%;
+}
 
+/* //////////////////////////form section//////////////////////////////// */
+#forms{
+    background-color: #00053b;
+}
 
+#forms h2{
+    color: #fff;
+    text-align: center;
+}
+
+#customerform{
+    display:flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 300px;
+    height: 145px;
+    background-color: #f99500
+}
+
+/* #insideform{
+    background-color: #707070;
+    height: 30%;
+    width: 30%;
+    margin: auto;
+} */
+
+#authentication{
+    width: 60%;
+    margin: auto;
+    /* margin-top: 300px; */
+}
+
+/* ------------------------------settings------------------------------------------ */
+
+#settings div{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#settings p{
+    color: #fff;
+    font-size: 5rem;
+}
+#settings{
+    height: 100%;
+    background: linear-gradient(to right top, #fbfbd4, #f1e9a7, #e9d67a, #e4c24a, #e1ac00);
+}
 
 

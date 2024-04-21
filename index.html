@@ -7,6 +7,8 @@
 
     <link rel="stylesheet" href="styles.css">
 
+    
+
     <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
@@ -16,6 +18,8 @@
     <link rel="stylesheet" href="./calendar-js-2.10.15/dist/calendar.js.css">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.0.0/css/flag-icons.min.css" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/spiketip-tooltip@1.1.1/spiketip.min.css">
 
     <title>Admin panel</title>
 </head>
@@ -40,22 +44,14 @@
 
             <button for="#dashboard"><i class="fa-solid fa-house" style="color: #ffffff;"></i>Dashboard</button>
 
-            <button for="#form"><i class="fa-solid fa-file" style="color: #ffffff;"></i>Form</button>
+            <button for="#forms"><i class="fa-solid fa-file" style="color: #ffffff;"></i>Form</button>
 
             <button for="#tables"><i class="fa-solid fa-table" style="color: #ffffff;"></i>Tables</button>
 
             <button for="#charts"><i class="fa-solid fa-chart-line" style="color: #ffffff;"></i>Charts</button>
 
-            <button for="#icons"><i class="fa-solid fa-icons" style="color: #ffffff;"></i>Icons</button>
-
-            <button for="#uielements"><i class="fa-solid fa-layer-group"></i>UI Elements</button>
-
             <button for="#authentication"><i class="fa-solid fa-calendar" style="color: #ffffff;"></i>Book
                 appointment</button>
-
-            <button for="#pages"><i class="fa-solid fa-folder"></i>Pages</button>
-
-            <button for="#users"><i class="fa-solid fa-user" style="color: #ffffff;"></i>Users</button>
 
             <button for="#settings"><i class="fa-solid fa-gear" style="color: #ffffff;"></i>Settings</button>
 
@@ -392,18 +388,42 @@
                             </tbody>
                         </table>
                     </div>
+<!------------------------------ table section end ----------------------------------------->
+<!--------------------------------------- footer card section ------------------------------------->
                     <div id="card-container">
                         <div class="card-div-5">
                             <div class="internal-card-div-5">
-                                <i class="fa-solid fa-dollar-sign"></i>
+                                <i class="fa-solid fa-thumbs-up" style="color: #2185d0;"></i>
                                 <h4>
                                     <span>+</span>
                                     <div class="counter">1024</div>
                                 </h4>
-                                <p>Total Sales</p>
+                                <p>FACEBOOK PAGE LIKES</p>
                             </div>
                         </div>
 
+
+                        <div class="card-div-5">
+                            <div class="internal-card-div-5">
+                                <i class="fa-solid fa-share" style="color: #f2711c;"></i>
+                                <h4>
+                                    <span>+</span>
+                                    <div class="counter">22566</div>
+                                </h4>
+                                <p>INSTAGRAM FOLLOWERS</p>
+                            </div>
+                        </div>
+
+                        <div class="card-div-5">
+                            <div class="internal-card-div-5">
+                                <i class="fa-solid fa-envelope" style="color: #767676;"></i>
+                                <h4>
+                                    <span>+</span>
+                                    <div class="counter">15566</div>
+                                </h4>
+                                <p>E-MAIL SUBSCRIBERS</p>
+                            </div>
+                        </div>
 
                         <div class="card-div-5">
                             <div class="internal-card-div-5">
@@ -412,32 +432,7 @@
                                     <span>+</span>
                                     <div class="counter">1024</div>
                                 </h4>
-                                <p>Total Sales</p>
-                            </div>
-                        </div>
-
-
-
-
-                        <div class="card-div-5">
-                            <div class="internal-card-div-5">
-                                <i class="fa-solid fa-dollar-sign"></i>
-                                <h4>
-                                    <span>+</span>
-                                    <div class="counter">1024</div>
-                                </h4>
-                                <p>Total Sales</p>
-                            </div>
-                        </div>
-
-                        <div class="card-div-5">
-                            <div class="internal-card-div-5">
-                                <i class="fa-solid fa-dollar-sign"></i>
-                                <h4>
-                                    <span>+</span>
-                                    <div class="counter">1024</div>
-                                </h4>
-                                <p>Total Sales</p>
+                                <p>TOTAL SALES</p>
                             </div>
                         </div>
                     </div>
@@ -447,8 +442,136 @@
 
 
 
-            <div id="form">Viewing form</div>
-            <div id="tables">Viewing Tables</div>
+    <div id="forms">
+
+        <div id="insideform">
+                <h2>
+                    This is how your form will appear to your leads
+                </h2>
+
+                <form action="" id="customerform">
+                    <input type="text" name="" placeholder="Name">
+                    <input type="text" name="" placeholder="Email">
+                    <input type="text" name="" placeholder="Number">
+                    <input type="text" name="" placeholder="Age">
+                </form>
+            </div>
+               
+    </div>
+
+   
+
+
+<!--/--/-/-/-/-/-/-//-/-/ TABLE SECTION /-/-/-/-/-/-//-/-/-->
+            <div id="tables"><div id="table1">
+                <h2>Top Visitors by Country</h2>
+                <p>Your year long website traffic data</p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Country</th>
+                            <th>Uniue visitors</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><span class="fi fi-us fis"></span> United States</td>
+                            <td class="text-right">27,340</td>
+                        </tr>
+                        <tr>
+                            <td><span class="fi fi-in fis"></span> India</td>
+                            <td class="text-right">21,280</td>
+                        </tr>
+                        <tr>
+                            <td><span class="fi fi-jp fis"></span> Japan</td>
+                            <td class="text-right">18,210</td>
+                        </tr>
+                        <tr>
+                            <td><span class="fi fi-gb fis"></span> United Kingdom</td>
+                            <td class="text-right">15,176</td>
+                        </tr>
+                        <tr>
+                            <td><span class="fi fi-es fis"></span> Spain</td>
+                            <td class="text-right">14,276</td>
+                        </tr>
+                        <tr>
+                            <td><span class="fi fi-de fis"></span> Germany</td>
+                            <td class="text-right">13,176</td>
+                        </tr>
+                        <tr>
+                            <td><span class="fi fi-br fis"></span> Brazil</td>
+                            <td class="text-right">12,176</td>
+                        </tr>
+                        <tr>
+                            <td><span class="fi fi-id fis"></span> Indonesia</td>
+                            <td class="text-right">11,886</td>
+                        </tr>
+                        <tr>
+                            <td><span class="fi fi-gr fis"></span> Philippines</td>
+                            <td class="text-right">11,509</td>
+                        </tr>
+                        <tr>
+                            <td><span class="fi fi-sg fis"></span> Singapore</td>
+                            <td class="text-right">1,700</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div id="table2">
+                <h2>Most Sales by Country</h2>
+                <p>sadasdsad</p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Country</th>
+                            <th>No.of Sales</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><span class="fi fi-us fis"></span> United States</td>
+                            <td class="text-right">27,340</td>
+                        </tr>
+                        <tr>
+                            <td><span class="fi fi-in fis"></span> India</td>
+                            <td class="text-right">21,280</td>
+                        </tr>
+                        <tr>
+                            <td><span class="fi fi-jp fis"></span> Japan</td>
+                            <td class="text-right">18,210</td>
+                        </tr>
+                        <tr>
+                            <td><span class="fi fi-gb fis"></span> United Kingdom</td>
+                            <td class="text-right">15,176</td>
+                        </tr>
+                        <tr>
+                            <td><span class="fi fi-es fis"></span> Spain</td>
+                            <td class="text-right">14,276</td>
+                        </tr>
+                        <tr>
+                            <td><span class="fi fi-de fis"></span> Germany</td>
+                            <td class="text-right">13,176</td>
+                        </tr>
+                        <tr>
+                            <td><span class="fi fi-br fis"></span> Brazil</td>
+                            <td class="text-right">12,176</td>
+                        </tr>
+                        <tr>
+                            <td><span class="fi fi-id fis"></span> Indonesia</td>
+                            <td class="text-right">11,886</td>
+                        </tr>
+                        <tr>
+                            <td><span class="fi fi-gr fis"></span> Philippines</td>
+                            <td class="text-right">11,509</td>
+                        </tr>
+                        <tr>
+                            <td><span class="fi fi-sg fis"></span> Singapore</td>
+                            <td class="text-right">1,700</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div></div>
 
 
 
@@ -456,11 +579,38 @@
             <!-- Charts  -->
 
             <div id="charts">
-                <div id="chart1"></div>
-                <div id="chart2"></div>
-                <div id="chart3"></div>
-                <div id="chart4"></div>
+                
+                <div class="chartparent">
+                    <div class="chart-text">
+                        <h2>Traffic Overview</h2>
+                        <p>Your year long website traffic data</p>
+                    </div>
+                    <div id="chart0"></div>
+                </div>
 
+                <div class="chartparent">
+                    <div class="chart-text">
+                        <h2>Traffic Overview</h2>
+                        <p>Your year long website traffic data</p>
+                    </div>
+                    <div id="chart2"></div>
+                </div>
+
+                <div class="chartparent">
+                    <div class="chart-text">
+                        <h2>Traffic Overview</h2>
+                        <p>Your year long website traffic data</p>
+                    </div>
+                    <div id="chart3"></div>
+                </div>
+
+                <div class="chartparent">
+                    <div class="chart-text">
+                        <h2>Traffic Overview</h2>
+                        <p>Your year long website traffic data</p>
+                    </div>
+                    <div id="chart4"></div>
+                </div>
 
             </div>
 
@@ -485,7 +635,7 @@
 
             <div id="settings">
 
-                <p class="wip">Work in progress</p>
+                <div class="wip"><p>Work in progress  <i class="fa-solid fa-gear fa-spin" style="color: #ffffff;"></i> </p></div>
 
             </div>
 
