@@ -49,6 +49,12 @@ body{
     background-color:#1967D3;
 }
 
+@media(max-width: 675px){
+    .hidetextbtn{
+        display: none;
+    }
+}
+
 /* .hidden{
     display: none;
 } */
