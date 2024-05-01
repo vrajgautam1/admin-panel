@@ -50,6 +50,9 @@ body{
 }
 
 @media(max-width: 675px){
+    body {
+        background-color: red;
+    }
     .hidetextbtn{
         display: none;
     }
